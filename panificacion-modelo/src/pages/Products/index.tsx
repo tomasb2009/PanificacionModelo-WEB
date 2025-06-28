@@ -102,20 +102,20 @@ function Products() {
   // Mostrar skeleton si está cargando O si es la carga inicial
   if (loadingCategories || loadingProducts || showInitialLoading) {
     return (
-      <Box pt={4} px={4}>
+      <Box pt={4} px={{ base: 1, md: 4 }}>
         {/* Skeleton del CategorySelector */}
         <Box mt={6} mb={8}>
           <Center mb={8}>
-            <Skeleton height="40px" width="200px" />
+            <Skeleton height={{ base: "36px", md: "40px" }} width={{ base: "140px", md: "200px" }} />
           </Center>
           <Center mb={4}>
-            <Skeleton height="20px" width="300px" />
+            <Skeleton height={{ base: "16px", md: "20px" }} width={{ base: "180px", md: "300px" }} />
           </Center>
-          <Flex justify="center" gap={12}>
+          <Flex justify="center" gap={{ base: 4, md: 12 }} flexWrap={{ base: "wrap", md: "nowrap" }}>
             {[1, 2, 3, 4, 5, 6].map((i) => (
-              <VStack key={i} spacing={2}>
-                <Skeleton height="60px" width="60px" borderRadius="full" />
-                <Skeleton height="16px" width="80px" />
+              <VStack key={i} spacing={2} minW={{ base: "70px", md: "60px" }}>
+                <Skeleton height={{ base: "48px", md: "60px" }} width={{ base: "48px", md: "60px" }} borderRadius="full" />
+                <Skeleton height={{ base: "12px", md: "16px" }} width={{ base: "60px", md: "80px" }} />
               </VStack>
             ))}
           </Flex>
@@ -125,24 +125,24 @@ function Products() {
         {[1, 2, 3].map((catIndex) => (
           <Box key={catIndex} mb={10}>
             <Center mb={6} mt={8}>
-              <Skeleton height="32px" width="150px" />
+              <Skeleton height={{ base: "24px", md: "32px" }} width={{ base: "100px", md: "150px" }} />
             </Center>
             <Box
               display="grid"
-              gridTemplateColumns="repeat(auto-fit, minmax(280px, 1fr))"
-              gap={6}
+              gridTemplateColumns={{ base: "1fr", sm: "1fr 1fr", md: "repeat(auto-fit, minmax(280px, 1fr))" }}
+              gap={{ base: 4, md: 6 }}
             >
               {[1, 2, 3, 4].map((productIndex) => (
                 <Box
                   key={productIndex}
                   bg="white"
                   borderRadius="2xl"
-                  p={4}
+                  p={{ base: 2, md: 4 }}
                   boxShadow="md"
                 >
-                  <Skeleton height="200px" borderRadius="lg" mb={4} />
-                  <SkeletonText noOfLines={2} spacing={2} mb={2} />
-                  <Skeleton height="20px" width="60px" />
+                  <Skeleton height={{ base: "120px", md: "200px" }} borderRadius="lg" mb={4} />
+                  <SkeletonText noOfLines={2} spacing={2} mb={2} skeletonHeight={{ base: 2, md: 4 }} />
+                  <Skeleton height={{ base: "14px", md: "20px" }} width={{ base: "40px", md: "60px" }} />
                 </Box>
               ))}
             </Box>
