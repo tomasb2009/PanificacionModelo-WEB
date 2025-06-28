@@ -41,7 +41,7 @@ export default function Hero() {
     <Flex
       position="relative"
       w="full"
-      h={{ base: "100vh", md: "calc(100vh - 64px)" }}
+      h={{ base: "calc(100vh - 64px)", md: "calc(100vh - 64px)" }}
       align="center"
       justify="center"
       overflow="hidden"
