@@ -4,6 +4,9 @@ import ErrorDetail from "./ErrorDetail";
 import Home from "./Home";
 import Products from "./Products";
 import Info from "./Info";
+import Login from "./Login";
+import ProtectedRoute from "../components/ProtectedRoute";
+import AdminPanel from "./AgregarProducto/AdminPanel";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +29,18 @@ const router = createBrowserRouter([
       {
         path: "/informacion",
         element: <Info />,
+      },
+      {
+        path: "/agregarProductos",
+        element: (
+          <ProtectedRoute>
+            <AdminPanel />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
     ],
   },

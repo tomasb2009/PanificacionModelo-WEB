@@ -56,7 +56,7 @@ export default function Hero() {
         backgroundImage="url('./img/Fondo.jpg')"
         backgroundSize="cover"
         backgroundPosition="center"
-        filter="brightness(0.75)"
+        filter="brightness(0.55)"
         zIndex={-2}
       />
 
@@ -130,11 +130,11 @@ export default function Hero() {
               fontSize={btnSize}
               boxShadow="0 4px 12px rgba(237, 202, 111, 0.4)"
               _hover={{
-                bg: "yellow.500",
+                bg: "yellow.400",
                 boxShadow: "0 6px 20px rgba(237, 202, 111, 0.6)",
               }}
               _active={{
-                bg: "yellow.500",
+                bg: "yellow.400",
                 transform: "scale(0.95)",
                 boxShadow: "0 3px 10px rgba(237, 202, 111, 0.6)",
               }}
