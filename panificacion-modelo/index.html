@@ -8,6 +8,17 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panificación Modelo</title>
+    <style>
+      /* Quitar highlight azul al tocar en mobile */
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* Quitar outline azul de botones, links y elementos interactivos al hacer focus */
+      button:focus, a:focus, [tabindex]:focus, input:focus, textarea:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
