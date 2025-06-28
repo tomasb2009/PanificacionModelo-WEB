@@ -41,7 +41,7 @@ export default function Hero() {
     <Flex
       position="relative"
       w="full"
-      h="calc(100vh - 64px)"
+      h={{ base: "100vh", md: "calc(100vh - 64px)" }}
       align="center"
       justify="center"
       overflow="hidden"
@@ -153,7 +153,15 @@ export default function Hero() {
               color="yellow.400"
               fontSize={btnSize}
               _hover={{ textDecoration: "underline" }}
-              _active={{ color: "yellow.500" }}
+              _active={{
+                color: "yellow.500 !important",
+                bg: "transparent !important",
+              }}
+              _focus={{
+                color: "yellow.400",
+                bg: "transparent",
+                boxShadow: "none",
+              }}
               onClick={() => navigate("/informacion")}
               aria-label="Más información"
               userSelect="none"

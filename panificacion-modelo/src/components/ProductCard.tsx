@@ -15,7 +15,7 @@ export function ProductCard({
 }: ProductCardProps) {
   return (
     <Box
-      w={{ base: "360px", md: "320px", lg: "320px" }}
+      w={{ base: "320px", md: "320px", lg: "320px" }}
       bg="white"
       borderRadius="2xl"
       boxShadow="md"
