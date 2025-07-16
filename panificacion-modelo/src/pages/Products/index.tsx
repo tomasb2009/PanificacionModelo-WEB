@@ -74,9 +74,9 @@ function Products() {
       "Cafetería",
       "Combos",
       "Panadería",
-      "Para Agregar",
       "Sandwich",
       "Bebidas",
+      "Para Agregar",
     ];
 
     // Crear un mapa de categorías por nombre para acceso rápido

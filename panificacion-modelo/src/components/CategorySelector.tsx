@@ -12,9 +12,9 @@ const categories = [
   { icon: MdCoffee, label: "Cafetería", id: "cafeteria" },
   { icon: GiCoffeeCup, label: "Combos", id: "combos" },
   { icon: MdBakeryDining, label: "Panadería", id: "panaderia" },
-  { icon: MdAddCircle, label: "Para Agregar", id: "para-agregar" },
   { icon: GiSandwich, label: "Sandwich", id: "sandwich" },
   { icon: MdLocalDrink, label: "Bebidas", id: "bebidas" },
+  { icon: MdAddCircle, label: "Para Agregar", id: "para-agregar" },
 ];
 
 interface CategorySelectorProps {

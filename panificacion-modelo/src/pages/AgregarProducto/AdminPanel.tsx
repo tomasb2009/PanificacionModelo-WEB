@@ -463,7 +463,6 @@ export default function AdminPanel() {
                             <Tooltip label="Editar" hasArrow>
                               <IconButton
                                 aria-label="Editar"
-                                mb={2}
                                 icon={<EditIcon />}
                                 size="sm"
                                 colorScheme="yellow"
