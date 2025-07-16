@@ -34,7 +34,7 @@ interface LinkItem {
 
 const mainLinks: LinkItem[] = [
   { uri: "/", label: "Inicio" },
-  { uri: "/productos", label: "Productos" },
+  { uri: "/productos", label: "Menú" },
   { uri: "/informacion", label: "Información" },
   { uri: "/agregarProductos", label: "Agregar Producto", requiresAuth: true },
 ];
